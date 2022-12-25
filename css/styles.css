@@ -1,24 +1,36 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #F2E5E5;
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    background-color: #F2E5E5;
+    /* width: 1536px; */
+    height: 1188px;
 }
 
+.body p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2B3A55;
+    margin: 20px;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 80px;
-    /* position: fixed; */
-    top: 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    color: #2B3A55;
 }
 
 header .name {
-    font-family: 'Cairo', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -27,6 +39,7 @@ nav ul {
     list-style: none;
     justify-content: space-between;
     position: relative;
+    /* float: right; */
 }
 
 nav ul li {
@@ -35,14 +48,18 @@ nav ul li {
 }
 
 a {
+
     text-decoration: none;
     color: #2B3A55;
+    margin: 5px;
 
 }
 
 a:hover,
-a.active {
+a.active,
+a:visited {
     font-weight: bold;
+    /* color: #2B3A55; */
 }
 
 /* Hamburger Menu */
@@ -80,32 +97,72 @@ a.active {
     transform: translateY(-1px) rotate(45deg);
 }
 
+/* Footer */
+.about a,
+.social-media a {
+    color: #F2E5E5;
+
+}
+
 footer {
     background-color: #2B3A55;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
+    /* position: fixed; */
+    color: #F2E5E5;
+    bottom: 0px;
+    box-sizing: border-box;
+    align-items: stretch;
 }
 
-footer .info {
+.footer-container {
+    bottom: 0px;
+    margin: auto;
+    /* max-width: 1300px; */
+    padding: 64px 128px;
     display: flex;
-    background-color: #2B3A55;
+    justify-content: space-between;
+    gap: 24px;
+
 }
 
-footer .section {
-    flex: 1;
-    margin: 20px;
+h1 {
+    font-weight: bold;
+    color: #E8C4C4;
+}
+
+.address,
+.about li,
+.social-media {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.social-media i {
+    font-size: 24px;
+}
+
+.left-box p {
+    margin-top: 8px;
+}
+
+.footer-container .center-box {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.center-box ul {
     list-style: none;
+    /* text-align: center; */
 }
 
+
+.right-box h1 {
+    white-space: nowrap;
+}
 
 /* Responsive Breakpoint*/
 /* Ukuran Mobile*/
 @media screen and (max-width: 576px) {
-    /* header {
-        padding: 10px;
-    } */
+
 
     nav ul {
         position: fixed;
@@ -116,7 +173,6 @@ footer .section {
         top: 80px;
         left: -100%;
         transition: all .5s;
-
     }
 
     nav ul li {
@@ -137,7 +193,24 @@ footer .section {
         font-weight: bold;
     }
 
+    /* Footer */
+    .footer-container {
+        padding: 32px 16px;
+        flex-wrap: wraps;
+        flex-direction: column;
+    }
 
+    .left-box p {
+        text-align: justify;
+        width: 344px;
+        /* display: contents; */
+        /* height: 117px; */
+    }
+
+    .center-box,
+    .right-box {
+        margin-top: 32px;
+    }
 }
 
 /* Ukuran Tablet*/
@@ -155,7 +228,6 @@ footer .section {
         top: 80px;
         left: -100%;
         transition: all .5s;
-
     }
 
     nav ul li {
@@ -167,7 +239,6 @@ footer .section {
         display: block;
     }
 
-
     #check:checked~ul {
         left: 0;
     }
@@ -177,4 +248,20 @@ footer .section {
         font-weight: bold;
     }
 
+    /* Footer */
+    .footer-container {
+        flex-wrap: wrap;
+        padding: 32px 16px;
+    }
+
+    .left-box p {
+        text-align: justify;
+        /* flex: none; */
+        /* width: 720px; */
+    }
+
+    .right-box {
+        width: 344px;
+        height: 76px;
+    }
 }
