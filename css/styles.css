@@ -226,6 +226,7 @@ nav.active ul {
 .slide-content {
     margin: 0 45px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .card {
