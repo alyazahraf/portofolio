@@ -19,7 +19,7 @@ h1 {
 }
 
 #gallery-container h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     color: #2B3A55;
     padding-bottom: 20px;
@@ -61,6 +61,7 @@ header {
     position: fixed;
     color: #2B3A55;
     background-color: #F2E5E5;
+    z-index: 2;
 
 }
 
@@ -201,8 +202,138 @@ nav.active ul {
     top: 9%;
 }
 
-/* Gallery */
+/* Projects */
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C6899;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #1C6899;
+}
 
+.slide-container h1 {
+    display: flex;
+    color: #CEE4F2;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+.slide-content {
+    margin: 0 45px;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 15px;
+    min-height: 320px;
+
+}
+
+.card a {
+    display: flex;
+    font-size: 24px;
+
+}
+
+.card i {
+    margin-right: 12px;
+}
+
+.card h3 {
+    color: #1C6899;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #63A5CF;
+}
+
+#info {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+
+.tools .js {
+    color: #F59E0B;
+    background-color: #FEF3C7;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.tools .java {
+    color: #F97316;
+    background-color: #FFEDD5;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.tools .css {
+    color: #3B82F6;
+    background-color: #DBEAFE;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.tools .php {
+    color: #6366F1;
+    background-color: #E0E7FF;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.rate {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.swiper-navBtn {
+    color: #D1CF52;
+    transition: color 0.3s ease;
+}
+
+
+
+.swiper-pagination-bullet {
+    background-color: #D1CF52;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #D1CF52;
+}
+
+
+
+/* Gallery */
 #gallery-container {
     height: 100vh;
     display: flex;

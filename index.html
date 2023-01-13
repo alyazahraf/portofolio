@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  /><link
-    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-    rel="stylesheet"
-  />
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/cbf4afc6ef.js"
       crossorigin="anonymous"
@@ -75,6 +83,101 @@
           />
         </svg>
       </div>
+    </section>
+
+    <section class="slide-container swiper">
+      <h1>My Projects</h1>
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="swiper-slide card">
+            <a
+              ><i class="fa fa-github"></i>
+              <h3>Project Title</h3></a
+            >
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptates, quod, quia, voluptate quae voluptatem
+                quibusdam voluptatibus quos quidem quas nesciunt. Quisquam,
+                quae.
+              </p>
+            </div>
+
+            <div id="info">
+              <div class="tools">
+                <h4 class="js">Javascript</h4>
+                <h4 class="java">Java</h4>
+                <h4 class="css">CSS</h4>
+                <h4 class="php">PHP</h4>
+              </div>
+              <div class="rate">
+                <i class="fa fa-star"> 0 </i>
+                <i class="fa fa-eye"> 0 </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <a
+              ><i class="fa fa-github"></i>
+              <h3>Project Title</h3></a
+            >
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptates, quod, quia, voluptate quae voluptatem
+                quibusdam voluptatibus quos quidem quas nesciunt. Quisquam,
+                quae.
+              </p>
+            </div>
+
+            <div id="info">
+              <div class="tools">
+                <h4 class="js">Javascript</h4>
+                <h4 class="java">Java</h4>
+                <h4 class="css">CSS</h4>
+                <h4 class="php">PHP</h4>
+              </div>
+              <div class="rate">
+                <i class="fa fa-star"> 0 </i>
+                <i class="fa fa-eye"> 0 </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <a
+              ><i class="fa fa-github"></i>
+              <h3>Project Title</h3></a
+            >
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptates, quod, quia, voluptate quae voluptatem
+                quibusdam voluptatibus quos quidem quas nesciunt. Quisquam,
+                quae.
+              </p>
+            </div>
+
+            <div id="info">
+              <div class="tools">
+                <h4 class="js">Javascript</h4>
+                <h4 class="java">Java</h4>
+                <h4 class="css">CSS</h4>
+                <h4 class="php">PHP</h4>
+              </div>
+              <div class="rate">
+                <i class="fa fa-star"> 0 </i>
+                <i class="fa fa-eye"> 0 </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
     </section>
 
     <section id="gallery-container">
@@ -144,4 +247,8 @@
       </class>
     </footer>
   </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
 </html>
