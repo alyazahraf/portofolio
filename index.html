@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/jquery-3.6.3.min.js"></script>
+    <!-- <script src="js/jquery-3.6.3.min.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -85,11 +85,12 @@
       </div>
     </section>
 
-    <section class="slide-container swiper main">
+    <script src="js/main.js"></script>
+    <section class="slide-container swiper">
       <h1>My Projects</h1>
       <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="swiper-slide card">
+        <div class="card-wrapper swiper-wrapper" id="swiper-wrapper">
+          <div class="swiper-slide card repo">
             <a
               ><i class="fa fa-github"></i>
               <h3>Project Title</h3></a
@@ -104,7 +105,7 @@
             </div>
 
             <div id="info">
-              <div class="tools">
+              <div id="lang">
                 <h4 class="js">Javascript</h4>
                 <h4 class="java">Java</h4>
                 <h4 class="css">CSS</h4>
@@ -132,7 +133,7 @@
             </div>
 
             <div id="info">
-              <div class="tools">
+              <div id="lang">
                 <h4 class="js">Javascript</h4>
                 <h4 class="java">Java</h4>
                 <h4 class="css">CSS</h4>
@@ -160,7 +161,7 @@
             </div>
 
             <div id="info">
-              <div class="tools">
+              <div id="lang">
                 <h4 class="js">Javascript</h4>
                 <h4 class="java">Java</h4>
                 <h4 class="css">CSS</h4>
@@ -207,6 +208,33 @@
         <div class="gallery__item--8">
           <img src="./assets/3.jpg" class="gallery__img" alt="Image 5" />
         </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-container">
+        <form action="">
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="input your subject..."
+          ></textarea>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Lorem ipsum dolor sit amet consectetur. Tincidunt ornare justo pharetra integer aliquam tellus. Ultrices morbi purus sapien aliquam feugiat. Nunc sagittis et massa nibh molestie viverra a massa. Praesent ultrices urna dignissim quis vulputate commodo posuere."
+          ></textarea>
+
+          <div class="send">
+            <button class="mail" type="submit">
+              Send Mail <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
